@@ -3,7 +3,7 @@ greet = fn
 end
 
 polite_greeter = fn 
-	name -> IO.puts "hello " <> name
+	name -> IO.puts "hello " <> name <> " " <> "have a nice day"
 end
 
-greet.(polite_greeter, {:person, "METE", "BAYKAM"})
+greet.(polite_greeter, {:person, "Mete", "Baykam"})
