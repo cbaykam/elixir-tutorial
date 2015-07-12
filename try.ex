@@ -18,3 +18,4 @@ interested = fn
 	niceness -> IO.puts "oh, hi there" <> niceness
 end
 
+greeter.(informal, "Cem Baykam")
