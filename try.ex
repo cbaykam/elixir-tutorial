@@ -1,9 +1,20 @@
-greet = fn
-	greeter, {:person, first_name, last_name} -> greeter.(first_name <> " " <> last_name)
+greeter = fn
+	greet, name -> greet.(name)
+end
+	
+polite = fn
+	niceness -> IO.puts "hello " <> niceness
 end
 
-polite_greeter = fn 
-	name -> IO.puts "hello " <> name <> " " <> "have a nice day"
+informal = fn
+	niceness -> IO.puts "hi " <> niceness
 end
 
-greet.(polite_greeter, {:person, "Mete", "Baykam"})
+rude = fn
+	niceness -> IO.puts "whatsup " <> niceness
+end
+
+interested = fn
+	niceness -> IO.puts "oh, hi there" <> niceness
+end
+
