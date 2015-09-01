@@ -1,2 +1,0 @@
-defmodule Calc do
-end

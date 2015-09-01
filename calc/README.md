@@ -1,4 +1,0 @@
-Calc
-====
-
-** TODO: Add description **
